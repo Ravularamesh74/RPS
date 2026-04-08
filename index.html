@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RPS Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="RPS-game.css">
+</head>
+
+<body>
+  <div class="container">
+    
+    <!-- Header -->
+    <header>
+      <h1>⚡ Rock Paper Scissors</h1>
+      <p class="tagline">Play Smart. Win Fast.</p>
+    </header>
+
+    <!-- Score Board -->
+    <div class="score-board">
+      <div class="score-box">
+        <h2>You</h2>
+        <span class="js-user-score">0</span>
+      </div>
+      <div class="score-box">
+        <h2>Computer</h2>
+        <span class="js-computer-score">0</span>
+      </div>
+    </div>
+
+    <!-- Game Area -->
+    <section class="game">
+
+      <div class="moves">
+        <button class="move-btn js-rock-btn">
+          <img src="assets/rock.jpg">
+          <span>Rock</span>
+        </button>
+
+        <button class="move-btn js-paper-btn">
+          <img src="assets/paper.jpg">
+          <span>Paper</span>
+        </button>
+
+        <button class="move-btn js-scissors-btn">
+          <img src="assets/scissors.jpg">
+          <span>Scissors</span>
+        </button>
+      </div>
+
+      <!-- Result Display -->
+      <div class="result-box">
+        <p class="js-result">Make your move</p>
+        <p class="js-moves"></p>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button class="btn reset js-reset-btn">Reset</button>
+        <button class="btn auto js-autoplay">Auto Play</button>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>🔥 First to 3 wins the match</p>
+    </footer>
+
+  </div>
+
+  <script src="RPS-game.js"></script>
+</body>
+</html>
