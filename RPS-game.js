@@ -101,7 +101,14 @@ function updateUI(result, player, computer) {
     <img src="assets/${computer}.jpg" class="move-icon1">
     Computer
   `;
+  document.body.classList.remove('win-effect', 'lose-effect');
 
+  if (result === 'win') {
+    document.body.classList.add('win-effect');
+  } else if (result === 'lose') {
+    document.body.classList.add('lose-effect');
+  }
+  
   updateScore();
 
   // Add glow effect
